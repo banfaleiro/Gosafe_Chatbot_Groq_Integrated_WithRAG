@@ -28,10 +28,23 @@ GOSAFE_RED = "#C8102E"
 GOSAFE_DARK = "#1A1A1A"
 
 st.markdown(
+    """
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
     f"""
     <style>
+        html, body, [class*="css"] {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+        }}
         .stApp {{
             background-color: #f7f5f2;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }}
         section[data-testid="stSidebar"] {{
             background-color: {GOSAFE_DARK};
