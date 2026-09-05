@@ -42,9 +42,9 @@ st.markdown(
             color: #000000 !important;
         }}
         .stApp {{
-            background-color: #f7f5f2;
+            background-color: #000000;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #000000 !
+            color: #f5f5f5; 
         }}
         section[data-testid="stSidebar"] {{
             background-color: {GOSAFE_DARK};
@@ -80,9 +80,13 @@ st.markdown(
             font-weight: 600;
             margin-right: 6px;
         }}
+        
         div[data-testid="stChatMessage"] {{
             border-radius: 12px;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
         }}
+        
         .source-pill {{
             display: inline-block;
             background-color: #fdeaea;
