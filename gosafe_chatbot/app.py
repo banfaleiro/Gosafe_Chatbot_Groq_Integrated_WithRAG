@@ -3,10 +3,8 @@ Gosafe Fire, Security and Safety - RAG Chatbot UI
 ===================================================
 Run with:  streamlit run app.py
 
-Set your Groq API key either as an environment variable:
-    export GROQ_API_KEY="your-key-here"
-or paste it into the sidebar when the app is running.
 """
+
 
 import os
 import streamlit as st
@@ -41,10 +39,12 @@ st.markdown(
     <style>
         html, body, [class*="css"] {{
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+            color: #000000 !important;
         }}
         .stApp {{
             background-color: #f7f5f2;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #000000 !
         }}
         section[data-testid="stSidebar"] {{
             background-color: {GOSAFE_DARK};
